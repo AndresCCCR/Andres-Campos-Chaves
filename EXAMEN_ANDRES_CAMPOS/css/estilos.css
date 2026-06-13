@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Fondo general */
+body {
+    background: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+/*Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #34495e;
+}
+
+/*Navbar */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2980b9;
+}
+
+/*Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/*Botones */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+/*Botón eliminar */
+a button:has(+ a) {
+    background: #e74c3c;
+}
+
+/*Formularios */
+form {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/*Mensajes */
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p[style*="green"] {
+    color: #2ecc71 !important;
+    font-weight: bold;
+}
+
+p[style*="red"] {
+    color: #e74c3c !important;
+    font-weight: bold;
+}
+
+/*Lista estadísticas */
+ul {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
